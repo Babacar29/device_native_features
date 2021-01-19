@@ -23,6 +23,7 @@ class PlacesListScreen extends StatelessWidget {
         builder: (ctx, snapshot) => snapshot.connectionState == ConnectionState.waiting ? Center(child: CircularProgressIndicator(),) :
         Consumer<GreatPlaces>(
           builder: (ctx, greatPlace, ch){
+            //print(greatPlace.items[0].image);
             return greatPlace.items.length <= 0 ? ch :
             ListView.builder(
               itemCount: greatPlace.items.length,

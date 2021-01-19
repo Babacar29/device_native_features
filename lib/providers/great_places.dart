@@ -19,8 +19,9 @@ class GreatPlaces extends ChangeNotifier{
   }
 
   Future<void> fetchAndSetPlaces() async{
-    final dataList = await DBHelper.get('user_places');
+    final dataList = await DBHelper.getData('user_places');
     _items = dataList.map((e) => Place(id: e['id'], title: e['title'], location: null, image: File(e['image']))).toList();
+    //print(_items[0].title);
     notifyListeners();
   }
 }
