@@ -49,5 +49,7 @@
     <string>Enable myApp to access mic to record your voice</string>
     <key>NSPhotoLibraryUsageDescription</key>
     <string>Need my app to upload image</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Need to get your location!</string>
 </dict>
 </plist>
